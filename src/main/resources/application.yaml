@@ -8,14 +8,17 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/amourabarreto/ead-config-server-repo
           default-label: main
-          username: amourabarreto
-          password: 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
+          uri: ${URI}
+          username: ${USERNAME}
+          password: ${PASSWORD}
+#          uri: https://github.com/amourabarreto/ead-config-server-repo
+#          username: amourabarreto
+#          password: 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
 
 eureka:
   client:
     serviceUrl:
       defaultZone: 'http://localhost:8761/eureka'
   instance:
-    hostname: localhost
+    prefer-ip-address: true
