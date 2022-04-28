@@ -14,7 +14,7 @@ spring:
           password: ${PASSWORD}
 #          uri: https://github.com/amourabarreto/ead-config-server-repo
 #          username: amourabarreto
-#          password: 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
+#          password: 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
 
 eureka:
   client:
