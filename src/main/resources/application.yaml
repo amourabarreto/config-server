@@ -18,7 +18,9 @@ spring:
 
 eureka:
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: ${URL-EUREKA-SERVER}
   instance:
-    prefer-ip-address: true
+    hostname: ead-config-server
