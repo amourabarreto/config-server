@@ -10,8 +10,8 @@ spring:
         git:
           default-label: main
           uri: ${URI}
-          username: ${USERNAME-GIT}
-          password: ${PASSWORD--GIT}
+          username: ${USERNAME_GIT}
+          password: ${PASSWORD_GIT}
 #          uri: https://github.com/amourabarreto/ead-config-server-repo
 #          username: amourabarreto
 #          password: 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
@@ -21,8 +21,8 @@ ead:
     username: ${USERNAME}
     password: ${USERNAME}
   serviceRegistry:
-    username: ${USERNAME-EUREKA}
-    password: ${PASSWORD-EUREKA}
+    username: ${USERNAME_EUREKA}
+    password: ${PASSWORD_EUREKA}
 
 eureka:
   client:
