@@ -1,0 +1,28 @@
+server:
+  port: ${PORT}
+
+cloud:
+  config:
+    server:
+      git:
+        default-label: main
+        uri: https://github.com/amourabarreto/ead-config-server-repo
+        username: ${GIT_USERMANE}
+        password: ${GIT_PASSWORD}
+
+ead:
+  configServer:
+    username: ${CONFIG_SERVER_USERNAME}
+    password: ${CONFIG_SERVER_PASSWORD}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
+  instance:
+    hostname: ${APP_DOMAIN_NAME}
+    non-secure-port: 80
+
+encrypt:
+  key: 6w9z$C&F)J@McQfTjWnZr4u7x!A%D*G-KaPdSgUkXp2s5v8y/B?E(H+MbQeThWmY
+
