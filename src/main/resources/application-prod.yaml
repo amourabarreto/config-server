@@ -1,14 +1,15 @@
 server:
   port: ${PORT}
 
-cloud:
-  config:
-    server:
-      git:
-        uri: https://github.com/amourabarreto/ead-config-server-repo
-        default-label: main
-        username: ${GIT_USERMANE}
-        password: ${GIT_PASSWORD}
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/amourabarreto/ead-config-server-repo
+          default-label: main
+          username: ${GIT_USERMANE}
+          password: ${GIT_PASSWORD}
 
 ead:
   configServer:
